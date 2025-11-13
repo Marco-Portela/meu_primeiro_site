@@ -1,0 +1,149 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p, h1{
+    color: white;
+}
+
+.fonte-black{
+    color: black;
+    text-align: justify;
+}
+.menu-principal ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(152, 194, 245);
+    
+}
+
+.menu-principal a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: block;/*Deixa a tag ocupar todo o espaço do seu container*/
+    padding: 20px 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.menu-principal a:hover{
+    background-color: rgb(101, 121, 200);
+    color: white
+}
+
+.hero{
+    min-height: 90vh;
+    background-image: url(IMG/Marvel.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;             /* Ativa o Flexbox no "pai" */
+    justify-content: center; /* Centraliza o "filho" no eixo Horizontal */
+    align-items: center;     /* Centraliza o "filho" no eixo Vertical */
+    
+    color: white; /* Define a cor do texto padrão para branco */
+}
+
+.hero-content {
+    text-align: center; /* Centraliza o texto DENTRO da caixa */
+    max-width: 600px; /* Impede que o texto fique largo demais em telas grandes */
+    
+    /* Efeito "Overlay": Fundo preto com 50% de transparência.
+       rgba(0, 0, 0, 0.5) = (Red, Green, Blue, Alpha/Opacidade)
+       Isso garante que o texto seja legível em cima de qualquer imagem.
+    */
+    background-color: rgba(49, 76, 167, 0.5); 
+    padding: 40px;
+    border-radius: 8px; /* Cantos arredondados */
+}
+
+/* Estilo do Título Principal */
+.hero-content h1 {
+    font-size: 48px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/* Estilo do Subtítulo */
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* Estilo do Botão de Ação */
+.hero-button {
+    display: inline-block;
+    background-color: #3498db; /* O mesmo azul do hover do menu */
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 18px;
+    
+    /* Efeito de transição suave */
+    transition: background-color 0.3s ease;
+}
+
+.hero-button:hover {
+    background-color: #2980b9; /* Azul um pouco mais escuro */
+}
+
+/* Estilos da Seção Feature*/
+
+.feature-container {
+    display: flex;
+    gap: 20px; /*Espaçamento entre os itens*/
+    padding: 60px 40px;
+    background-color: rgba(154, 154, 252, 0.638);
+}
+
+.feature-card{
+    /*Diz ao itém, ocupe uma parte igual ao espaço disponível*/
+    flex: 1;
+    padding: 60px;
+    background-color: rgb(154, 154, 252);
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(7, 0, 51, 0.54);
+    text-align: center;
+}
+
+.feature-card:hover{
+    box-shadow: 0 4px 10px rgba(7, 0, 51, 0.253);
+    transform: translateX(+5px);
+}
+
+.card-info{
+    background-color: rgba(154, 154, 252,0.5);
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding: 5% 0% 5% 0%;
+}
+
+.card-imagem{
+    flex: 1;
+    padding-left: 8%;
+    padding-right: 0%;
+}
+
+.card-texto{
+    flex: 1;
+    padding-left: 0%;
+    padding-right: 10%;
+}
+
+.card-imagem img{
+    max-width: 60%;
+    display: block;
+    border-radius: 30px;
+}
+
+#p-rodape{
+    text-align: center;
+    color: black;
+}
