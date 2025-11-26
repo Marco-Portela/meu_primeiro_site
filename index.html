@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="estilos.css">
     <link rel="icon" type="image/png" href="IMG/logo geek.jpg">
     <title>Meu Primeiro Site</title>
 </head>
@@ -22,7 +22,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="projetos">
         <section class="hero">
             <div class="hero-content">
                 <h1>Nexus Geek</h1>
@@ -59,20 +59,45 @@
 
         <section class="card-info">
         
-        <div class="card-imagem">
-            <img src="IMG/Universe.jpg" alt="Uma imagem do universo, ciência e ficção.">
-        </div>
-
-        <div class="card-texto">
-            <h3>Nossa História</h3>
-            <p class="fonte-black">
-                A Nexus Geek nasceu em 2015, quando um grupo de amigos apaixonados por quadrinhos, games, filmes e tecnologia decidiu criar um espaço que unisse toda a essência da cultura nerd em um só lugar.
-                <br><br>
-                O projeto começou como uma pequena loja online de colecionáveis, mas rapidamente evoluiu para uma plataforma completa que mistura conteúdo, eventos e produtos exclusivos para fãs.
-            </p>
+            <div class="card-imagem">
+                <img src="IMG/Universe.jpg" alt="Uma imagem do universo, ciência e ficção.">
             </div>
 
-    </section>
+            <div class="card-texto">
+                <h3>Nossa História</h3>
+                <p class="fonte-black">
+                    A Nexus Geek nasceu em 2015, quando um grupo de amigos apaixonados por quadrinhos, games, filmes e tecnologia decidiu criar um espaço que unisse toda a essência da cultura nerd em um só lugar.
+                    <br><br>
+                    O projeto começou como uma pequena loja online de colecionáveis, mas rapidamente evoluiu para uma plataforma completa que mistura conteúdo, eventos e produtos exclusivos para fãs.
+                </p>
+            </div>
+        </section>
+
+        <section class="contato">
+            <div class="contato-form">
+                <h2>Entre em Contato</h2>
+                <p id="font-contact">
+                    Tem alguma dúvida com relação aos nossos produtos e formas de pagamento? Preencha os campos abaixo.
+                </p>
+
+                <form>
+                    <label>Seu Nome</label>
+                    <input type="text" placeholder="Ex.: João e o Pé de Feijão">
+
+                    <label>Seu E-mail</label>
+                    <input type="text" placeholder="Ex.: joao.feijao@gmail.com">
+
+                    <label>Sua Mensagem</label>
+                    <textarea rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+
+                    <button type="submit" class="contato-button">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div class="contato-img">
+                <img src="IMG/Gamer.jpg" alt="Jovem em um quarto gamer, mexendo no PC.">
+            </div>
+        </section>
 
     </main>
 
