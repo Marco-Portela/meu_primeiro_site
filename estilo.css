@@ -1,3 +1,11 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root{
+    --cor-fundo: rgba(154, 154, 252, 0.638);
+}
+
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
@@ -54,8 +62,7 @@ p, h1{
     
     /* Efeito "Overlay": Fundo preto com 50% de transparência.
        rgba(0, 0, 0, 0.5) = (Red, Green, Blue, Alpha/Opacidade)
-       Isso garante que o texto seja legível em cima de qualquer imagem.
-    */
+       Isso garante que o texto seja legível em cima de qualquer imagem.*/
     background-color: rgba(49, 76, 167, 0.5); 
     padding: 40px;
     border-radius: 8px; /* Cantos arredondados */
@@ -99,7 +106,7 @@ p, h1{
     display: flex;
     gap: 20px; /*Espaçamento entre os itens*/
     padding: 60px 40px;
-    background-color: rgba(154, 154, 252, 0.638);
+    background-color: var(--cor-fundo);
 }
 
 .feature-card{
@@ -148,4 +155,60 @@ p, h1{
     color: black;
 }
 
-/*Seção de Contato*/
+/*Seção Contato*/
+.contato {
+    display: flex; /* Coloca lado a lado */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Separa as colunas */
+    padding: 80px 60px;
+    background-color:var(--cor-fundo);
+}
+
+.contato-form {
+    flex: 1; /* Ocupa 50% */
+    padding-right: 50px; /* Espaço entre o formulário e a imagem */
+
+}
+
+.contato-img {
+    flex: 1; /* Ocupa 50% */
+    max-width: 30%;
+}
+
+/* Garante que a imagem seja responsiva */
+.contato-img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Borda arredondada na imagem fica elegante */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Uma sombra suave */
+}
+
+/* Estilo dos Rótulos (Labels) */
+form label {
+    display: block; /* Faz o label ficar em uma linha própria */
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Estilo dos Campos (Inputs e Textarea) */
+form input, form textarea {
+    width: 100%; /* Ocupa toda a largura da coluna */
+    padding: 15px; /* Espaço interno confortável para digitar */
+    margin-bottom: 20px; /* Espaço até o próximo campo */
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: inherit; /* Herda a fonte do site */
+    background-color:rgba(154, 154, 252, 0.441);
+}
+
+#font-contact{
+    color: black;
+}
+
+footer{
+    background-color: rgb(130, 130, 255);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
